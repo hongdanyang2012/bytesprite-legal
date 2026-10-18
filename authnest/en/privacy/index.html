@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AuthNest Privacy Policy · AuthNest</title>
+<style>
+:root { color-scheme: light dark; --fg:#111; --muted:#555; --bg:#fafafa; --card:#fff; --link:#5b3cc4; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg:#eee; --muted:#aaa; --bg:#121212; --card:#1c1c1c; --link:#b9a6ff; }
+}
+* { box-sizing: border-box; }
+body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Noto Sans SC", sans-serif; background:var(--bg); color:var(--fg); line-height:1.65; }
+header { max-width:720px; margin:0 auto; padding:28px 20px 0; }
+header a { color:var(--link); text-decoration:none; margin-right:14px; font-size:14px; }
+main { max-width:720px; margin:0 auto; padding:12px 20px 48px; }
+article { background:var(--card); border-radius:12px; padding:28px 24px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+h1 { font-size:1.6rem; margin-top:0; }
+h2 { font-size:1.15rem; margin-top:1.6em; }
+.muted { color:var(--muted); font-size:14px; }
+footer { max-width:720px; margin:0 auto; padding:0 20px 40px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<header>
+  <div style="font-weight:700;font-size:18px;margin-bottom:10px;">AuthNest</div>
+  <nav><a href="/authnest/en/privacy/">Privacy</a><a href="/authnest/en/terms/">Terms</a><a href="/authnest/en/help/">Help</a><a href="/authnest/privacy/">中文</a></nav>
+</header>
+<main><article>
+<h1>AuthNest Privacy Policy</h1>
+<p>Last updated: 2026-09-14</p>
+<p>AuthNest (“we”) respects your privacy. This policy explains how we handle information related to the AuthNest mobile app.</p>
+<h2>Encryption and local-first design</h2>
+<ul>
+<li>Authenticator secrets (TOTP) and password vault plaintext stay in the device secure area (iOS Keychain / Android Keystore) with local encryption.</li>
+<li>When cloud backup is enabled, the client packs data and encrypts it with AES-256-GCM before upload.</li>
+<li><strong>The cloud stores ciphertext only.</strong> Our servers do not decrypt secrets, parse secrets, generate OTPs, or read password plaintext.</li>
+<li>App-lock PINs are stored locally as hashes and are never uploaded.</li>
+</ul>
+<h2>Information we process</h2>
+<ul>
+<li><strong>Account</strong>: email or third-party sign-in identifiers (e.g. Apple / Google) for cloud backup and membership.</li>
+<li><strong>Backup ciphertext</strong>: encrypted snapshots and metadata (version, checksum, entry counts) after you opt in to cloud backup.</li>
+<li><strong>Optional settings mirror</strong>: theme / language / lock timeout — off by default; synced only if you enable it.</li>
+<li><strong>Subscription status</strong>: synced via Apple App Store / Google Play and RevenueCat for entitlements and quotas.</li>
+<li><strong>Optional diagnostics</strong>: crash logs, if enabled, are redacted and <strong>never</strong> include secrets, OTPs, PINs, or backup plaintext.</li>
+</ul>
+<h2>What we do not collect</h2>
+<ul>
+<li>We do not collect or upload TOTP secrets, one-time passwords (OTPs), or vault passwords in plaintext.</li>
+<li>We do not ship third-party advertising SDKs by default and do not use ATT for ads.</li>
+</ul>
+<h2>Third parties</h2>
+<ul>
+<li><strong>Supabase</strong>: authentication and encrypted backup storage.</li>
+<li><strong>RevenueCat</strong> and <strong>Apple / Google</strong>: subscriptions and receipt validation.</li>
+</ul>
+<p>These providers process data under their own policies, limited to what is needed for AuthNest features.</p>
+<h2>Retention and deletion</h2>
+<ul>
+<li>You control local data; uninstalling removes on-device data (unless retained by system backups).</li>
+<li>After disabling cloud backup or deleting an account, we stop retaining related cloud ciphertext per product flow and applicable law.</li>
+<li>Contact us via in-app Help &amp; Feedback for account-related requests.</li>
+</ul>
+<h2>Children</h2>
+<p>AuthNest is not directed to children under 13. We do not knowingly collect children’s personal information.</p>
+<h2>Contact</h2>
+<p>Use in-app Help &amp; Feedback for privacy questions. <strong>Do not</strong> send secrets, OTPs, PINs, or plaintext passwords.</p>
+<p>Hosted copy for store metadata: see <code>store/metadata/*/urls.privacy_url</code>.</p>
+</article></main>
+<footer>© AuthNest · bytesprite</footer>
+</body>
+</html>
