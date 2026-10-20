@@ -11,6 +11,7 @@ Public legal / support pages for ByteSprite apps (path-based: `/app-name/...`).
 | Privacy | https://legal.bytesprite.cn/authnest/privacy/ | https://legal.bytesprite.cn/authnest/en/privacy/ |
 | Terms | https://legal.bytesprite.cn/authnest/terms/ | https://legal.bytesprite.cn/authnest/en/terms/ |
 | Help | https://legal.bytesprite.cn/authnest/help/ | https://legal.bytesprite.cn/authnest/en/help/ |
+| Delete account | https://legal.bytesprite.cn/authnest/delete-account/ | https://legal.bytesprite.cn/authnest/en/delete-account/ |
 
 ## Deploy
 

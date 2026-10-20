@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>删除账号 · AuthNest</title>
+<style>
+:root { color-scheme: light dark; --fg:#111; --muted:#555; --bg:#fafafa; --card:#fff; --link:#5b3cc4; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg:#eee; --muted:#aaa; --bg:#121212; --card:#1c1c1c; --link:#b9a6ff; }
+}
+* { box-sizing: border-box; }
+body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Noto Sans SC", sans-serif; background:var(--bg); color:var(--fg); line-height:1.65; }
+header { max-width:720px; margin:0 auto; padding:28px 20px 0; }
+header a { color:var(--link); text-decoration:none; margin-right:14px; font-size:14px; }
+main { max-width:720px; margin:0 auto; padding:12px 20px 48px; }
+article { background:var(--card); border-radius:12px; padding:28px 24px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+h1 { font-size:1.6rem; margin-top:0; }
+h2 { font-size:1.15rem; margin-top:1.6em; }
+.muted { color:var(--muted); font-size:14px; }
+footer { max-width:720px; margin:0 auto; padding:0 20px 40px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<header>
+  <div style="font-weight:700;font-size:18px;margin-bottom:10px;">AuthNest</div>
+  <nav><a href="/authnest/privacy/">隐私政策</a><a href="/authnest/terms/">服务条款</a><a href="/authnest/help/">帮助与支持</a><a href="/authnest/delete-account/">删除账号</a><a href="/authnest/en/delete-account/">English</a></nav>
+</header>
+<main><article>
+
+<h1>删除 AuthNest 账号</h1>
+<p class="muted">开发者：bytesprite · 应用：AuthNest: 2FA &amp; TOTP（cn.bytesprite.authnest）</p>
+
+<h2>方式一：在应用内删除</h2>
+<ol>
+<li>打开 AuthNest 并登录。</li>
+<li>进入 <strong>设置 &gt; 账号</strong>。</li>
+<li>点击 <strong>删除账号</strong> 并确认。</li>
+</ol>
+
+<h2>方式二：不使用应用</h2>
+<p>如果你已卸载应用，请用注册时的邮箱发送邮件至 <a href="mailto:bytespirit.support@gmail.com?subject=AuthNest%20account%20deletion%20request">bytespirit.support@gmail.com</a>，主题写 <strong>AuthNest account deletion request</strong>。我们可能会回信确认你是账号所有者后再执行删除。请勿在邮件中提供 TOTP 密钥、验证码、PIN 或密码。</p>
+
+<h2>会被删除的数据</h2>
+<ul>
+<li>登录账号（邮箱及认证记录）。</li>
+<li>云端同步的个人资料与应用偏好设置。</li>
+<li>加密云备份（TOTP 账户与密码库条目）。</li>
+<li>与账号关联的订阅权益与额度记录。</li>
+</ul>
+<p>仅保存在设备本地的数据会保留在该设备上，直到你卸载应用或清除应用数据。如仍需要，请先导出。</p>
+
+<h2>可能保留的数据及期限</h2>
+<p>我们会在确认请求后 30 天内完成删除。Google Play 的购买记录由 Google 管理，不在我们控制范围内。删除账号<strong>不会</strong>自动取消订阅，请在 Google Play &gt; 付款和订阅 中取消。</p>
+
+<h2>只删除数据、保留账号</h2>
+<p>在应用内关闭云备份，即可从服务器删除加密备份，同时保留账号。</p>
+
+</article></main>
+<footer>© AuthNest · bytesprite</footer>
+</body>
+</html>
